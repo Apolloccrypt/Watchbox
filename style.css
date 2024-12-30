@@ -39,15 +39,16 @@ main {
 /* Image container for displaying images horizontally */
 .image-container {
   display: flex;
-  justify-content: space-between;
-  gap: 10px; /* Space between the images */
+  gap: 15px; /* Space between the images */
   margin-bottom: 2rem; /* Space below the images */
+  justify-content: space-between;
 }
 
 .image-container img {
-  max-width: 23%; /* Set max width to a percentage to fit 4 images on one row */
-  height: auto;
+  height: 300px; /* Set height to ensure they align as a collage */
+  object-fit: cover; /* Ensures the image keeps its aspect ratio without stretching */
   border-radius: 5px;
+  width: auto; /* Let the width adjust to maintain aspect ratio */
 }
 
 /* Post content */
