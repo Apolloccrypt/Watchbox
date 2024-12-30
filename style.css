@@ -3,17 +3,17 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
   color: #333;
   display: flex;
-  flex-direction: column; /* Zorg ervoor dat de footer onderaan komt */
+  flex-direction: column;
 }
 
-/* Styling voor de header */
+/* Header styling */
 header {
-  background-color: #2c3e50;
-  color: #fff;
+  background-color: #ffffff;
+  color: #333;
   text-align: center;
   padding: 40px 20px;
 }
@@ -28,12 +28,12 @@ header p {
   margin: 0;
 }
 
-/* Styling voor de post */
+/* Post styling */
 .post {
-  background-color: #fff;
-  margin-bottom: 40px; /* Ruimte tussen de posts */
-  border-radius: 8px; /* Afgemaakte hoeken voor posts */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw rondom */
+  background-color: #ffffff;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
 
@@ -61,19 +61,19 @@ header p {
 }
 
 .image-container img {
-  width: 48%; /* Zorgt ervoor dat de afbeeldingen netjes naast elkaar passen */
+  width: 48%;
   height: auto;
   border-radius: 5px;
 }
 
-/* Styling voor de footer */
+/* Footer styling */
 footer {
-  background-color: #2c3e50;
-  color: #fff;
+  background-color: #ffffff;
+  color: #333;
   text-align: center;
   padding: 20px 0;
   width: 100%;
-  margin-top: auto; /* Zorg ervoor dat de footer altijd onderaan komt */
+  margin-top: auto;
 }
 
 footer p {
@@ -91,31 +91,4 @@ a {
 a:hover {
   color: #2980b9;
   text-decoration: underline;
-}
-
-/* Voeg scheidingen toe tussen de posts */
-.post + .post {
-  border-top: 2px solid #eee;
-  padding-top: 20px;
-}
-
-/* Styling voor de footer-social media links (indien gewenst in toekomst) */
-footer .social-links {
-  margin-top: 15px;
-}
-
-footer .social-links a {
-  color: #ecf0f1;
-  margin: 0 10px;
-  font-size: 1.5em;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-footer .social-links a:hover {
-  color: #3498db;
-  transform: scale(1.1);
-}
-
-footer .social-links i {
-  font-size: 1.5em;
 }
