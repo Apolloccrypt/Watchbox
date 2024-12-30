@@ -14,124 +14,90 @@ body {
   padding: 20px;
 }
 
-/* Container for layout control */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 /* Header Styling */
 header {
-  background-color: #ffffff;
-  padding: 40px 0;
   text-align: center;
   margin-bottom: 40px;
 }
 
 header h1 {
-  font-size: 3em;
-  color: #2c3e50;
+  font-size: 2.5em;
   margin-bottom: 10px;
+  color: #2c3e50;
 }
 
 header p {
-  font-size: 1.2em;
-  color: #777;
+  font-size: 1.1em;
+  color: #555;
 }
 
 /* Main Content Styling */
 main {
+  max-width: 900px;
+  margin: 0 auto;
   background-color: #fff;
-  padding: 40px;
+  padding: 20px;
   border-radius: 8px;
 }
 
-.post-content {
-  padding: 20px;
-  margin-bottom: 40px;
-}
-
-.post-content h2 {
-  font-size: 2em;
-  color: #2c3e50;
+article h2 {
+  font-size: 1.8em;
   margin-top: 20px;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
+  color: #2c3e50;
 }
 
-.post-content p {
+article p {
   font-size: 1.1em;
+  margin-bottom: 15px;
   color: #555;
+}
+
+/* Collage container to display images side by side */
+.collage-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
   margin-bottom: 20px;
-  line-height: 1.8;
 }
 
-.post-content a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-.post-content a:hover {
-  text-decoration: underline;
+.collage-container img {
+  width: 23%; /* Adjust width to fit side by side */
+  height: auto;
+  border-radius: 5px;
 }
 
 /* Image Container Styling */
 .image-container {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
-.post-image {
-  width: 48%;  /* Adjust image width to fit nicely */
+.image-container img {
+  width: 48%; /* Ensures two images side by side */
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.post-image:hover {
-  transform: scale(1.05); /* Hover effect for images */
-}
-
-/* Special styling for the first four images to display side by side */
-.first-row-images {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.first-row-images .post-image {
-  width: 23%; /* Makes sure 4 images fit side by side */
-}
-
-.first-row-images img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 /* Footer Styling */
 footer {
-  background-color: #ffffff;
-  color: #333;
   text-align: center;
-  padding: 20px;
   margin-top: 40px;
 }
 
 footer p {
   font-size: 1em;
-  color: #777;
+  color: #555;
 }
 
 footer a {
+  display: inline-block;
+  margin-top: 10px;
   font-size: 1.1em;
-  color: #3498db;
+  color: #007BFF;
   text-decoration: none;
 }
 
@@ -139,18 +105,12 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .post-image {
-    width: 100%; /* Ensure images are full width on smaller screens */
-    margin-bottom: 20px;
-  }
+/* Styling for links in the post content */
+.post-content a {
+  color: #3498db;
+  text-decoration: none;
+}
 
-  header h1 {
-    font-size: 2.5em; /* Slightly smaller title for smaller screens */
-  }
-
-  header p {
-    font-size: 1.1em;
-  }
+.post-content a:hover {
+  text-decoration: underline;
 }
