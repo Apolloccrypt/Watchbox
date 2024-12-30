@@ -8,28 +8,26 @@
 /* Body Styling */
 body {
   font-family: 'Arial', sans-serif;
-  line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
+  line-height: 1.6;
   padding: 20px;
 }
 
-/* Header Styling */
 header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 header h1 {
   font-size: 2.5em;
-  margin-bottom: 10px;
   color: #333;
+  margin-bottom: 10px;
 }
 
 header p {
-  font-size: 1.2em;
-  color: #777;
-  margin-bottom: 20px;
+  font-size: 1.1em;
+  color: #555;
 }
 
 /* Main Content Styling */
@@ -39,136 +37,70 @@ main {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Styling for Post Previews */
-section {
-  margin-bottom: 40px;
-}
-
-section h2 {
+/* Post Content */
+.post-content h2 {
   font-size: 1.8em;
+  margin-top: 20px;
   color: #333;
-  margin-bottom: 10px;
 }
 
-section p {
+.post-content p {
   font-size: 1.1em;
+  margin-bottom: 15px;
   color: #555;
+}
+
+/* Image Containers */
+.image-container,
+.collage-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
-/* Post Preview Link Styling */
-section a {
-  display: block;
-  margin-top: 10px;
-  color: #3498db;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-section a:hover {
-  text-decoration: underline;
-}
-
-/* Image container for post previews (grid layout) */
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 20px;
+.image-container img,
+.collage-container img {
+  width: 48%;
+  height: auto;
+  border-radius: 5px;
 }
 
 .image-container img {
   width: 48%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
 }
 
-.image-container img:hover {
-  transform: scale(1.05);
+.collage-container img {
+  width: 23%;
+}
+
+.image-container img:last-child,
+.collage-container img:last-child {
+  margin-right: 0;
 }
 
 /* Footer Styling */
 footer {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 footer p {
   font-size: 1em;
-  color: #777;
+  color: #555;
 }
 
 footer a {
   display: inline-block;
   margin-top: 10px;
   font-size: 1.1em;
-  color: #3498db;
+  color: #007BFF;
   text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
-}
-
-/* Post Content (for individual posts) */
-.post-content {
-  margin-top: 40px;
-}
-
-.post-content h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.post-content p {
-  font-size: 1.2em;
-  color: #555;
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.post-content .image-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 30px;
-}
-
-.post-content .image-container img {
-  width: 48%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.post-content .image-container img:hover {
-  transform: scale(1.05);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  /* Adjust layout for smaller screens */
-  .image-container img {
-    width: 100%;
-  }
-
-  section {
-    margin-bottom: 20px;
-  }
-
-  header h1 {
-    font-size: 2em;
-  }
-
-  header p {
-    font-size: 1.1em;
-  }
-
-  footer p {
-    font-size: 1em;
-  }
 }
