@@ -36,58 +36,23 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Blogposts container */
-#posts {
+/* Image container for displaying images horizontally */
+.image-container {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: 10px; /* Space between the images */
+  margin-bottom: 2rem; /* Space below the images */
 }
 
-/* Blogpost styling */
-.post {
-  display: flex;
-  gap: 1rem;
-  background: #f4f4f4;
-  padding: 1rem;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.post-image {
-  max-width: 150px;
+.image-container img {
+  max-width: 23%; /* Set max width to a percentage to fit 4 images on one row */
   height: auto;
   border-radius: 5px;
 }
 
-.post-content {
-  flex: 1;
-}
-
-.post-content h2 {
-  margin: 0 0 0.5rem;
-  font-size: 1.5rem;
-}
-
-.post-content p {
-  color: #666;
-  margin: 0;
-  font-size: 1rem;
-}
-
-.post-content a {
-  color: #007acc;
-  text-decoration: none;
-}
-
-.post-content a:hover {
-  text-decoration: underline;
-}
-
-/* Separator styling */
-.separator {
-  height: 1px;
-  background: #ddd;
-  margin: 1rem 0;
+/* Post content */
+article {
+  margin-top: 2rem;
 }
 
 /* Footer styling */
@@ -97,24 +62,24 @@ footer {
   color: #555;
 }
 
-footer p {
-  font-size: 0.9rem;
-  margin: 0;
+footer a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* Responsiveness */
 @media (max-width: 600px) {
-  .post {
+  .image-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .post-image {
+  .image-container img {
     max-width: 100%;
     margin-bottom: 1rem;
-  }
-
-  .post-content h2 {
-    text-align: center;
   }
 }
