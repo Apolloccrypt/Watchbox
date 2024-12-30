@@ -1,3 +1,4 @@
+/* Algemene opmaak voor de website */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -7,6 +8,7 @@ body {
   color: #333;
 }
 
+/* Header-styling */
 header {
   background: #333;
   color: #fff;
@@ -19,6 +21,12 @@ header h1 {
   font-size: 2.5rem;
 }
 
+header p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Algemene layout voor de content */
 main {
   max-width: 800px;
   margin: 2rem auto;
@@ -28,12 +36,14 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* Blogposts container */
 #posts {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
+/* Blogpost styling */
 .post {
   display: flex;
   gap: 1rem;
@@ -54,24 +64,57 @@ main {
 }
 
 .post-content h2 {
-  margin: 0;
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
 }
 
 .post-content p {
   color: #666;
+  margin: 0;
+  font-size: 1rem;
 }
 
-a {
+.post-content a {
   color: #007acc;
   text-decoration: none;
 }
 
-a:hover {
+.post-content a:hover {
   text-decoration: underline;
 }
 
+/* Separator styling */
+.separator {
+  height: 1px;
+  background: #ddd;
+  margin: 1rem 0;
+}
+
+/* Footer styling */
 footer {
   text-align: center;
   margin: 2rem 0;
   color: #555;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+  .post {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .post-image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .post-content h2 {
+    text-align: center;
+  }
 }
