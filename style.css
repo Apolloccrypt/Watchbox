@@ -97,6 +97,24 @@ main {
   transform: scale(1.05); /* Hover effect for images */
 }
 
+/* Special styling for the first four images to display side by side */
+.first-row-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.first-row-images .post-image {
+  width: 23%; /* Makes sure 4 images fit side by side */
+}
+
+.first-row-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 /* Footer Styling */
 footer {
   background-color: #ffffff;
