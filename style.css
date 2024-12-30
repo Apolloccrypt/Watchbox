@@ -21,7 +21,7 @@ footer {
   text-align: center;
   padding: 20px 0;
   width: 100%; /* Zorg ervoor dat de footer de volledige breedte gebruikt */
-  /* Verwijder `position: relative` en `bottom: 0`, want we gebruiken Flexbox */
+  margin-top: auto; /* Zorgt ervoor dat de footer altijd onderaan komt */
 }
 
 /* Footer link styling */
