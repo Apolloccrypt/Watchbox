@@ -84,6 +84,26 @@ article a:hover {
   transform: scale(1.05); /* Hover effect for slight zoom */
 }
 
+/* Collage Image Styling (Top 4 images side-by-side) */
+.collage-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.collage-container img {
+  width: 23%; /* Aligns the 4 images to be side-by-side */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.collage-container img:hover {
+  transform: scale(1.05);
+}
+
 /* Footer Styling */
 footer {
   text-align: center;
@@ -107,49 +127,10 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Post Preview Section - Index Page */
-.post-preview {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.post-preview h2 {
-  font-size: 1.8em;
-  color: #2c3e50;
-  margin-bottom: 10px;
-}
-
-.post-preview p {
-  color: #555;
-  font-size: 1.1em;
-  margin-bottom: 20px;
-}
-
-.post-preview img {
-  width: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.post-preview img:hover {
-  transform: scale(1.05);
-}
-
-.post-preview a {
-  color: #3498db;
-  text-decoration: none;
-}
-
-.post-preview a:hover {
-  text-decoration: underline;
-}
-
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .image-container img {
+  .image-container img,
+  .collage-container img {
     width: 100%; /* Stack images vertically on mobile */
     margin-bottom: 20px;
   }
@@ -167,14 +148,6 @@ footer a:hover {
   }
 
   footer p, footer a {
-    font-size: 1em;
-  }
-
-  .post-preview h2 {
-    font-size: 1.5em;
-  }
-
-  .post-preview p {
     font-size: 1em;
   }
 }
