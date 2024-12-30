@@ -12,6 +12,8 @@ body {
   background-color: #f4f4f4;
   color: #333;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header Styling */
@@ -23,6 +25,7 @@ header {
 header h1 {
   font-size: 2.5em;
   margin-bottom: 10px;
+  color: #2c3e50;
 }
 
 header p {
@@ -32,13 +35,15 @@ header p {
 
 /* Main Content Styling */
 main {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Post Content Styling */
 article h2 {
   font-size: 1.8em;
   margin-top: 20px;
@@ -51,11 +56,20 @@ article p {
   color: #555;
 }
 
+article a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
 /* Image Container Styling */
 .image-container {
   display: flex;
   justify-content: space-between;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
@@ -64,12 +78,18 @@ article p {
   width: 48%;
   height: auto;
   border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
 }
 
 /* Footer Styling */
 footer {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 footer p {
