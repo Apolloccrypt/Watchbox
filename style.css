@@ -1,100 +1,92 @@
-/* Algemene reset */
+/* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body styling */
+/* Body Styling */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
+  padding: 20px;
 }
 
-/* Container voor centrale uitlijning */
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-/* Header styling */
+/* Header Styling */
 header {
-  background-color: #ffffff;
   text-align: center;
-  padding: 40px 0;
+  margin-bottom: 20px;
 }
 
 header h1 {
-  font-size: 3em;
-  color: #2c3e50;
+  font-size: 2.5em;
   margin-bottom: 10px;
 }
 
 header p {
-  font-size: 1.2em;
-  color: #777;
+  font-size: 1.1em;
+  color: #555;
 }
 
-/* Main content styling */
+/* Main Content Styling */
 main {
-  padding: 40px 0;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
 }
 
-.intro {
-  text-align: center;
-  margin-bottom: 40px;
+article h2 {
+  font-size: 1.8em;
+  margin-top: 20px;
+  color: #333;
 }
 
-.intro h2 {
-  font-size: 2.5em;
-  color: #2c3e50;
-  margin-bottom: 10px;
-}
-
-.intro p {
-  font-size: 1.2em;
+article p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
   color: #555;
 }
 
-.featured-post {
-  text-align: center;
-}
-
-.featured-post h2 {
-  font-size: 2.5em;
-  color: #2c3e50;
-  margin-bottom: 10px;
-}
-
-.featured-post p {
-  font-size: 1.2em;
-  color: #555;
+/* Image Container Styling */
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
-.featured-post img {
-  width: 100%;
-  max-width: 600px;
+.image-container img {
+  width: 48%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  border-radius: 5px;
 }
 
-.featured-post img:hover {
-  transform: scale(1.05);
-}
-
-/* Footer styling */
+/* Footer Styling */
 footer {
-  background-color: #ffffff;
   text-align: center;
-  padding: 20px 0;
+  margin-top: 20px;
 }
 
 footer p {
   font-size: 1em;
   color: #555;
 }
+
+footer a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
