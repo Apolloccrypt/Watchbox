@@ -1,86 +1,128 @@
-/* Algemene opmaak voor de website */
+/* Algemeen opmaak */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
   color: #333;
 }
 
-/* Header-styling */
 header {
-  background: #333;
+  background-color: #2c3e50;
   color: #fff;
+  padding: 20px;
   text-align: center;
-  padding: 1rem 0;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.5em;
 }
 
 header p {
-  margin: 0;
-  font-size: 1rem;
+  margin: 10px 0;
+  font-size: 1.2em;
 }
 
-/* Algemene layout voor de content */
-main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
-  background: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Image container for displaying images horizontally */
+/* Afbeeldingen netjes naast elkaar plaatsen */
 .image-container {
   display: flex;
-  gap: 15px; /* Space between the images */
-  margin-bottom: 2rem; /* Space below the images */
   justify-content: space-between;
+  gap: 10px; /* Ruimte tussen de afbeeldingen */
+  flex-wrap: wrap; /* Zorgt ervoor dat de afbeeldingen op kleinere schermen onder elkaar komen */
+  margin: 20px 0;
 }
 
 .image-container img {
-  height: 300px; /* Set height to ensure they align as a collage */
-  object-fit: cover; /* Ensures the image keeps its aspect ratio without stretching */
-  border-radius: 5px;
-  width: auto; /* Let the width adjust to maintain aspect ratio */
+  max-width: 100%;
+  height: auto;
+  width: 23%; /* Zorgt ervoor dat de afbeeldingen naast elkaar passen */
+  object-fit: cover; /* Zorgt ervoor dat de afbeeldingen goed worden bijgesneden */
+  border-radius: 5px; /* Zachte hoeken voor de afbeeldingen */
 }
 
-/* Post content */
+/* Hoofdtekst en artikelopmaak */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 article {
-  margin-top: 2rem;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer styling */
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+article p {
+  line-height: 1.6;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+article p:first-child {
+  margin-top: 0;
+}
+
+/* Footer */
 footer {
+  background-color: #2c3e50;
+  color: #fff;
   text-align: center;
-  margin: 2rem 0;
-  color: #555;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 footer a {
-  color: #007acc;
+  color: #ecf0f1;
   text-decoration: none;
+  font-weight: bold;
 }
 
 footer a:hover {
   text-decoration: underline;
 }
 
-/* Responsiveness */
-@media (max-width: 600px) {
+/* Media queries voor kleinere schermen */
+@media (max-width: 768px) {
   .image-container {
     flex-direction: column;
     align-items: center;
   }
 
   .image-container img {
-    max-width: 100%;
-    margin-bottom: 1rem;
+    width: 80%; /* Grotere afbeeldingen op kleinere schermen */
+    margin-bottom: 20px; /* Ruimte tussen de afbeeldingen */
+  }
+
+  article {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  article p {
+    font-size: 1em;
   }
 }
