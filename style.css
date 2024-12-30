@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
@@ -23,11 +23,12 @@ header {
 header h1 {
   font-size: 3em;
   color: #2c3e50;
+  margin-bottom: 10px;
 }
 
 header p {
   font-size: 1.2em;
-  color: #555;
+  color: #777;
 }
 
 /* Main Content Styling */
@@ -43,7 +44,7 @@ main {
 /* Article Styling for Post Pages */
 article h2 {
   font-size: 2em;
-  margin-top: 20px;
+  margin-top: 30px;
   color: #2c3e50;
 }
 
@@ -51,6 +52,15 @@ article p {
   font-size: 1.1em;
   margin-bottom: 20px;
   color: #555;
+}
+
+article a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+article a:hover {
+  text-decoration: underline;
 }
 
 /* Image Container Styling */
@@ -63,7 +73,7 @@ article p {
 }
 
 .image-container img {
-  width: 48%;
+  width: 48%; /* Ensures images are side-by-side */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -71,7 +81,7 @@ article p {
 }
 
 .image-container img:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05); /* Hover effect for slight zoom */
 }
 
 /* Footer Styling */
@@ -97,15 +107,55 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* Mobile responsiveness */
+/* Post Preview Section - Index Page */
+.post-preview {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.post-preview h2 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.post-preview p {
+  color: #555;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.post-preview img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.post-preview img:hover {
+  transform: scale(1.05);
+}
+
+.post-preview a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.post-preview a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .image-container img {
-    width: 100%;
+    width: 100%; /* Stack images vertically on mobile */
     margin-bottom: 20px;
   }
 
   header h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   header p {
@@ -117,6 +167,14 @@ footer a:hover {
   }
 
   footer p, footer a {
+    font-size: 1em;
+  }
+
+  .post-preview h2 {
+    font-size: 1.5em;
+  }
+
+  .post-preview p {
     font-size: 1em;
   }
 }
