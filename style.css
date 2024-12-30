@@ -20,11 +20,11 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
-  position: relative; /* Zorgt ervoor dat de footer normaal op de pagina komt */
   width: 100%; /* Zorg ervoor dat de footer de volledige breedte gebruikt */
-  bottom: 0;
+  /* Verwijder `position: relative` en `bottom: 0`, want we gebruiken Flexbox */
 }
 
+/* Footer link styling */
 footer a {
   color: #ecf0f1;
   text-decoration: none;
@@ -105,4 +105,9 @@ article p {
   margin-bottom: 20px;
   font-size: 1.1em;
   color: #444;
+}
+
+/* Zorg ervoor dat de footer niet over de tekst heen gaat */
+footer {
+  margin-top: auto; /* Zorg ervoor dat de footer altijd onderaan komt */
 }
